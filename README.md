@@ -33,6 +33,7 @@ p {
 * `display:table`: 元素的宽度为 auto 的时候表现为 “包裹性”。
 ### 3. for循环
 * for-in 循环 
+  
   数据格式： var data = ['表单1', '表单2', '表单3'];
   ```bash
   for (var i in data) {
@@ -43,6 +44,7 @@ p {
   * 思考问题：for循环，for-in，for-of，forEach？ [参考网站](https://blog.csdn.net/yyl927117/article/details/69631817)
 ### 4. 定位事件穿透
 * span定位在div上，click事件锁定div上，让span定位穿透并且可以点击
+
   ```bash
   span {pointer-events: none;}
   ```
