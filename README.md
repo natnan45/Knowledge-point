@@ -1,14 +1,14 @@
 # Knowledge-point
 一些有趣的知识点
 
-### 1.给div增加 placeholder 属性
+### 1. 给div增加 placeholder 属性
 ```bash
 .box:empty:before {
   content: attr(placeholder);
 }
 <div contenteditable='true' placeholder='div中输入文字' class='box'> </div>
 ```
-### 2.h2标签中嵌套P标签，要求p标签的宽度不得超过h2标签中的大写文字宽度
+### 2. h2标签中嵌套P标签，要求p标签的宽度不得超过h2标签中的大写文字宽度
 #### HTML结构
 ```bash
 <h2>
@@ -31,7 +31,7 @@ p {
 * `display:table-caption`: 表示元素的display水平表现为表格标题，自动自适应于外部表格容器宽度；
 * `caption-side:bottom`: 可以设置表格标题在底部；
 * `display:table`: 元素的宽度为 auto 的时候表现为 “包裹性”。
-### 3.for循环
+### 3. for循环
 * for-in 循环 
   数据格式： var data = ['表单1', '表单2', '表单3'];
   ```bash
@@ -41,3 +41,8 @@ p {
   // 表单1 表单2 表单3
   ```
   * 思考问题：for循环，for-in，for-of，forEach？ [参考网站](https://blog.csdn.net/yyl927117/article/details/69631817)
+### 4. 定位事件穿透
+* （span定位在div上，click事件锁定div上，让span定位穿透并且可以点击）
+  ```bash
+  span {pointer-events: none;}
+  ```
