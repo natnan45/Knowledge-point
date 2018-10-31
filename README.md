@@ -42,7 +42,7 @@ p {
   ```
   * 思考问题：for循环，for-in，for-of，forEach？ [参考网站](https://blog.csdn.net/yyl927117/article/details/69631817)
 ### 4. 定位事件穿透
-* （span定位在div上，click事件锁定div上，让span定位穿透并且可以点击）
+* span定位在div上，click事件锁定div上，让span定位穿透并且可以点击
   ```bash
   span {pointer-events: none;}
   ```
