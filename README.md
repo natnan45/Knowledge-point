@@ -49,7 +49,8 @@ p {
   span {pointer-events: none;}
   ```
 ### 5. AngularJS 事件监听
-  ```bash
+* $broadcast 父传子
+  ```js
   $rootScope.$broadcast('to-index', 'index');
 	$scope.$on('to-child', function() {
 		console.log('.....')
@@ -58,7 +59,7 @@ p {
 ### 6. AngularJS 报错
 * 一旦压缩之后报错，错误信息 “Uncaught Error:[$injector:unpr] Unknown provider: eProvider <- e <”
 * 发现原来我缺少了 '[]'
-  ```bash
+  ```js
   .directive('onFinishRenderFilters', function($timeout) {
 		return {
 			restrict: 'A',
