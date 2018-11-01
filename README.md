@@ -55,7 +55,7 @@ p {
   $rootScope.$broadcast('to-index', 'index')
   $scope.$on('to-child', function() {
 		console.log('.....')
-	}); 
+	})
   ```
 ### 6. AngularJS 报错
 * 一旦压缩之后报错，错误信息 “Uncaught Error:[$injector:unpr] Unknown provider: eProvider <- e <”
