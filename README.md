@@ -91,3 +91,14 @@ $scope.$on('to-child', function() {
 ```bash
 -webkit-tap-highlight-color:rgba(0,0,0,0);
 ```
+
+### 8. p标签超过n行，出现省略号
+* n代表你想在第几行省略号
+
+```bash
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: n;  
+```
