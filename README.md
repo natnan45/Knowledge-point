@@ -85,3 +85,9 @@ $scope.$on('to-child', function() {
   };
 }]) 
 ```
+
+### 7. 去除IOS input标签点击时候的灰色背景
+
+```bash
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+```
