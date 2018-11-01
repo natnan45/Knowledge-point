@@ -35,7 +35,7 @@ p {
 * for-in 循环 
   
   数据格式： var data = ['表单1', '表单2', '表单3'];
-  ```bash
+  ```js
   for (var i in data) {
     console.log(data[i])
   };
@@ -51,7 +51,7 @@ p {
 ### 5. AngularJS 事件监听
 * $broadcast 父传子
 
-  ```js
+  ```bash
   $rootScope.$broadcast('to-index', 'index')
   $scope.$on('to-child', function() {
 		console.log('.....')
@@ -61,20 +61,18 @@ p {
 * 一旦压缩之后报错，错误信息 “Uncaught Error:[$injector:unpr] Unknown provider: eProvider <- e <”
 * 发现原来我缺少了 '[]'
   
-  ```js
+  ```bash
   .directive('onFinishRenderFilters', function($timeout) {
 		return {
 			restrict: 'A',
-			link: function(scope, element, attr) {
-		  }
+			link: function(scope, element, attr) {}
 		};
 	})
 	//- 改成如下就可解决问题：
 	.directive('onFinishRenderFilters', ['$timeout', function($timeout) {
 		return {
 			restrict: 'A',
-			link: function(scope, element, attr) {
-		  }
+			link: function(scope, element, attr) {}
 		};
 	}]) 
   ```
