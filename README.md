@@ -52,8 +52,8 @@ p {
 * $broadcast 父传子
 
   ```js
-  $rootScope.$broadcast('to-index', 'index');
-	$scope.$on('to-child', function() {
+  $rootScope.$broadcast('to-index', 'index')
+  $scope.$on('to-child', function() {
 		console.log('.....')
 	}); 
   ```
