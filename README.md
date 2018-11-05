@@ -102,3 +102,24 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: n;  
 ```
+
+### 9. 数组对象去重复
+* 数组格式
+```json
+var data = [
+  { userId: "dFum4RT6", position: "java开发" },
+  { userId: "cFXm4RT6", position: "java开发" },
+  { userId: "kFom4RT6", position: "java开发" },
+  { userId: "cFXm4RT6", position: "java开发" },
+  { userId: "hFXm4RT6", position: "java开发" },
+]
+```
+* js
+```js
+var hash = {};
+arr = data.reduce(function(item, next) {
+  hash[next.userId] ? '' : hash[next.userId] = true && item.push(next);
+  return item
+}, [])
+console.log(arr);
+```
